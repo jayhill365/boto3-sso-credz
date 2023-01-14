@@ -10,3 +10,23 @@ This script is a Python Flask route handler that handles a POST request to the '
 7. It assumes a role and retrieves temporary credentials using the boto3 sts client.
 8. It generates a new ssh key pair and saves the private key to a .pem file.
 9. It reads the private key from the .pem file and sends it as an attachment to the user's email address.
+
+# Dependencies
+    Flask
+    Boto3
+    Auth0
+    Email service (for example SES)
+    
+  # Configuration
+  
+  The following placeholders need to be replaced with your own values:
+  # AUTH0_DOMAIN - Your Auth0 domain. # AUDIENCE - The audience for your Auth0 API. # AUTH0_CLIENT_ID - Your Auth0 API client ID. # AUTH0_CLIENT_SECRET - Your Auth0 API client secret. # ROLE_ARN - The ARN of the role that you want to assume. # IAM_GROUP_NAME - The name of the IAM group that the user should be added to.
+  
+  # Running the script
+ 1. Install the necessary dependencies by running pip install -r requirements.txt.
+ 2. Replace the placeholder values with your own Auth0 and AWS configuration information.
+ 3. Run the script using the command flask run.
+ 4. Make a POST request to the endpoint with a valid token and the user's email in the request body.
+
+
+    
