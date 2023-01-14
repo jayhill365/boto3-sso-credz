@@ -20,7 +20,7 @@ This script is a Python Flask route handler that handles a POST request to the '
   # Configuration
   
   The following placeholders need to be replaced with your own values:
-  # AUTH0_DOMAIN - Your Auth0 domain. # AUDIENCE - The audience for your Auth0 API. # AUTH0_CLIENT_ID - Your Auth0 API client ID. # AUTH0_CLIENT_SECRET - Your Auth0 API client secret. # ROLE_ARN - The ARN of the role that you want to assume. # IAM_GROUP_NAME - The name of the IAM group that the user should be added to.
+   AUTH0_DOMAIN - Your Auth0 domain.  AUDIENCE - The audience for your Auth0 API.  AUTH0_CLIENT_ID - Your Auth0 API client ID.  AUTH0_CLIENT_SECRET - Your Auth0 API client secret.  ROLE_ARN - The ARN of the role that you want to assume.  IAM_GROUP_NAME - The name of the IAM group that the user should be added to.
   
   # Running the script
  1. Install the necessary dependencies by running pip install -r requirements.txt.
